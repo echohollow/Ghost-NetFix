@@ -1,25 +1,27 @@
 # Ghost-NetFix
 
-Stealth network fixer script for Kali Linux after MAC address changes, NAT reconfigurations, or stealth boot scenarios.
+Stealth DNS and network recovery utility for Kali Linux, tailored for NAT-based operations and stealth environments.
 
-## 📜 About
+## 📜 Overview
 
-**Ghost-NetFix** safely restores internet access and DNS functionality after network disruptions,  
-especially useful after MAC spoofing, NAT hops, or stealth reboots.
+**Ghost-NetFix** repairs internet and DNS leaks after MAC address spoofing, NAT reconfiguration, VPN disruptions, or stealth boots.
 
-Features:
+It is built for operators who need quick recovery of clean network routes without leaving residual misconfigurations.
 
-- Flush broken resolvers
-- Inject stealth DNS servers manually
-- Restart networking stack cleanly
-- Kill leaking applications (like Firefox)
-- Verify external DNS and IP status
+**Core Actions:**
+- Kill broken DNS resolvers
+- Inject stealth DNS servers manually (1.1.1.1 and 9.9.9.9)
+- Restart the networking stack cleanly
+- Kill leaking processes (e.g., Firefox)
+- Verify external DNS and IP stealth status
+
+---
 
 ## ⚙️ Usage
 
-1. Download the script:
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/echohollow/ghost-netfix.git
-cd ghost-netfix
+git clone https://github.com/echohollow/Ghost-NetFix.git
+cd Ghost-NetFix
 chmod +x ghost-netfix.sh
